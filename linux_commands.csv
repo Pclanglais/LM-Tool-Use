@@ -1,0 +1,1234 @@
+command,prompt,output
+echo,display simple text message,"echo ""Hello World"""
+echo,display multiple words,echo This is a test message
+echo,display text with variables,"echo ""My username is $USER"""
+echo,display arithmetic result,echo $((5+3))
+echo,display command output,echo $(ls)
+ls,list files in current directory,ls
+ls,show hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files with human-readable sizes,ls -lh
+ls,sort files by modification time,ls -lt
+mkdir,create a single directory,mkdir new_folder
+mkdir,create multiple directories,mkdir -p parent/child/grandchild
+mkdir,create directories with numeric names,mkdir {2020..2022}-{01..12}
+cd,change to home directory,cd ~
+cd,change to previous directory,cd -
+cd,change to parent directory,cd ..
+which,locate full path of a command,which ls
+which,find multiple command locations,which -a python
+file,determine file type,file /bin/ls
+file,show mime type,file -i /etc/passwd
+printenv,show all environment variables,printenv
+printenv,show specific variable,printenv HOME
+mv,rename a file,mv oldname.txt newname.txt
+mv,move file to directory,mv file.txt /home/user/
+sleep,pause script execution,sleep 5
+sleep,create countdown timer,"sleep 10; echo ""Time's up"""
+echo,display simple text message,"echo ""Hello"
+echo,display multiple words,echo This is a test message
+echo,display variable value,echo $USER
+echo,display arithmetic result,echo $((2 + 2))
+echo,display command output,echo $(ls)
+echo,display with special characters,"echo -e ""Line 1\nLine 2"""
+ls,list files in current directory,ls
+ls,show hidden files,ls -a
+ls,show detailed file listing,ls -l
+ls,show files sorted by time,ls -t
+ls,show human-readable file sizes,ls -lah
+mkdir,create single directory,mkdir newdir
+mkdir,create multiple directories,mkdir -p project/{src
+mkdir,create nested directories,mkdir -p parent/child/grandchild
+cd,change to home directory,cd ~
+cd,change to specific directory,cd /usr/local
+cd,move up one directory,cd ..
+which,locate command executable,which ls
+which,show full path of command,which python3
+file,determine file type,file /bin/ls
+file,show file details,file *
+printenv,show all environment variables,printenv
+printenv,show specific variable,printenv HOME
+sleep,pause execution for seconds,sleep 5
+sleep,create simple countdown,"sleep 10 && echo ""Time's up!"""
+mv,rename single file,mv oldname.txt newname.txt
+mv,move file to directory,mv file.txt /path/to/destination
+mv,move multiple files,mv file1.txt file2.txt /destination
+clear,clear the terminal screen,clear
+history,view command history,history
+history,search command history for a specific term,history | grep keyword
+history,save command history to a file,history > command_history.txt
+history,limit history output,history 20
+ls,list files in current directory,ls
+ls,show hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files with human-readable sizes,ls -lah
+ls,sort files by modification time,ls -lt
+id,display current user identity,id
+id,show numeric user and group IDs,id -u
+id,show group memberships,id -G
+id,show user name,id -un
+id,show group names,id -gn
+chmod,add execute permission to a file,chmod +x filename
+chmod,remove write permission from a file,chmod -w filename
+chmod,set specific permissions (read/write/execute),chmod 755 filename
+chmod,recursively change permissions,chmod -R 644 directory
+chmod,change permissions using symbolic mode,chmod u+rwx
+su,switch to root user,su -
+su,switch to a specific user,su - username
+su,run a single command as another user,"su - username -c ""command"""
+sudo,run a command with administrative privileges,sudo command
+sudo,run a shell with administrative privileges,sudo -i
+sudo,run a command as a specific user,sudo -u username command
+passwd,change current user's password,passwd
+passwd,change another user's password,sudo passwd username
+passwd,set password expiration,sudo passwd -x 90 username
+passwd,lock a user account,sudo passwd -l username
+passwd,unlock a user account,sudo passwd -u username
+printenv,display all environment variables,printenv
+printenv,show value of specific environment variable,printenv USER
+printenv,display environment variables and pipe to less,printenv | less
+printenv,show PATH environment variable,printenv PATH
+printenv,display home directory,printenv HOME
+set,display all shell and environment variables,set
+set,display variables and pipe to less,set | less
+set,set shell options,set -o noclobber
+set,enable shell debugging,set -x
+set,disable shell debugging,set +x
+export,make variable available to child processes,export PATH=$PATH:/new/directory
+export,create new environment variable,"export MYVAR=""hello world"""
+export,modify existing environment variable,export PATH=$HOME/bin:$PATH
+export,remove environment variable,export -n MYVAR
+export,make function available to child processes,export -f myfunction
+alias,create simple command alias,alias ll='ls -l'
+alias,list all current aliases,alias
+alias,create alias with multiple commands,alias update='sudo apt update && sudo apt upgrade'
+alias,create alias with options,alias l.='ls -d .* --color=auto'
+alias,remove an alias,unalias ll
+cp,create backup of a file,cp .bashrc .bashrc.bak
+cp,copy file to another location,cp file1 /path/to/destination
+cp,copy directory recursively,cp -r sourcedir destdir
+cp,copy with interactive mode,cp -i file1 file2
+cp,preserve file attributes when copying,cp -p file1 file2
+nano,open file for editing,nano .bashrc
+nano,create new file,nano newfile.txt
+nano,open file at specific line,nano +10 filename
+nano,enable line numbers,nano -n filename
+nano,search within file,nano -w filename
+echo,display text,"echo ""Hello World"""
+echo,display environment variable,echo $HOME
+echo,display multiple variables,echo $USER $HOME
+echo,use escape sequences,"echo -e ""Line1\nLine2"""
+echo,suppress newline,"echo -n ""No newline"""
+source,reload bash configuration,source .bashrc
+source,execute script in current shell,source myscript.sh
+source,load environment variables,source /etc/environment
+source,run script with specific variables,source MYVAR=value script.sh
+source,debug sourced script,source -x script.sh
+vi,open a file for editing,vi filename
+vi,open multiple files for editing,vi file1 file2 file3
+vi,open file at specific line,vi +10 filename
+vi,recover unsaved file,vi -r filename
+vi,open file in read-only mode,vi -R filename
+:w,save current file,:w
+:wq,save and exit vi,:wq
+ZZ,save and exit vi,ZZ
+:q,quit vi,:q
+:q!,quit vi without saving,:q!
+:n,switch to next file in multi-file edit mode,:n
+:N,switch to previous file in multi-file edit mode,:N
+:buffer,switch to specific buffer,:buffer 2
+:buffers,list open buffers,:buffers
+:e,open additional file in current session,:e newfile.txt
+:r,insert contents of another file,:r filename
+d,delete text in vi,dW
+dW,delete from cursor to next word,dW
+d$,delete from cursor to end of line,d$
+d0,delete from cursor to beginning of line,d0
+dG,delete from current line to end of file,dG
+y,yank (copy) text in vi,yy
+yy,copy current line,yy
+5yy,copy current and next 4 lines,5yy
+yW,copy from cursor to next word,yW
+yG,copy from current line to end of file,yG
+p,paste text after cursor,p
+P,paste text before cursor,P
+J,join lines together,J
+f,search for character in current line,fa
+/,search entire file for text,/searchterm
+n,repeat previous search,n
+:%s,global search and replace,:%s/old/new/g
+:%s/,search and replace with confirmation,:%s/old/new/gc
+echo,display environment variable value,echo $PS1
+echo,display text to terminal,"echo ""Hello World"""
+echo,display multiple arguments,echo arg1 arg2 arg3
+echo,display text with color escape sequences,"echo -e ""\033[0;31mRed Text\033[0m"""
+echo,suppress newline at end,"echo -n ""No newline"""
+PS1,set basic prompt with username and hostname,"PS1=""\u@\h \$ """
+PS1,set prompt with time and hostname,"PS1=""\A \h \$ """
+PS1,set prompt with color,"PS1=""\[\033[0;31m\]<\u@\h \W>\$\[\033[0m\] """
+PS1,set prompt with bell,"PS1=""\a\$ """
+PS1,set prompt with full details,"PS1=""<\u@\h \W>\$ """
+apt-get,update package lists,apt-get update
+apt-get,install a package,apt-get install package_name
+apt-get,upgrade all packages,apt-get upgrade
+apt-get,remove a package,apt-get remove package_name
+apt-cache,search for a package,apt-cache search search_string
+apt-cache,show package information,apt-cache show package_name
+dpkg,list installed packages,dpkg --list
+dpkg,check package status,dpkg --status package_name
+dpkg,search which package contains a file,dpkg --search file_name
+dpkg,install a package file,dpkg --install package_file
+rpm,install a package file,rpm -i package_file
+rpm,upgrade a package file,rpm -U package_file
+rpm,query all installed packages,rpm -qa
+rpm,check if a package is installed,rpm -q package_name
+rpm,find which package installed a file,rpm -qf file_name
+yum,search for a package,yum search search_string
+yum,install a package,yum install package_name
+yum,update all packages,yum update
+yum,remove a package,yum erase package_name
+yum,show package information,yum info package_name
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+cd,change to home directory,cd ~
+cd,change to parent directory,cd ..
+cd,change to specific directory,cd /path/to/directory
+cd,go to previous directory,cd -
+cd,change to root directory,cd /
+file,determine file type,file filename
+file,check multiple file types,file file1 file2 file3
+file,show mime type,file -i filename
+file,follow symbolic links,file -L filename
+file,print file system type,file -s filename
+less,view file contents,less filename
+less,search within file,"less -p ""search term"" filename"
+less,show line numbers,less -N filename
+less,ignore case in searches,less -i filename
+less,quit immediately if file is smaller than screen,less -F filename
+mkdir,create single directory,mkdir newdir
+mkdir,create nested directories,mkdir -p parent/child/grandchild
+mkdir,create directory with specific permissions,mkdir -m 755 newdir
+mkdir,create multiple directories,mkdir dir1 dir2 dir3
+mkdir,create directory with verbose output,mkdir -v newdir
+cp,copy single file,cp source.txt destination.txt
+cp,copy directory recursively,cp -r sourcedir destdir
+cp,copy with interactive mode,cp -i source.txt destination.txt
+cp,preserve file attributes,cp -p source.txt destination.txt
+cp,copy multiple files,cp file1.txt file2.txt file3.txt /destination/
+mv,rename file,mv oldname.txt newname.txt
+mv,move file to directory,mv file.txt /path/to/directory/
+mv,move multiple files,mv file1.txt file2.txt /destination/
+mv,move with interactive prompt,mv -i file.txt destination.txt
+mv,move and create backup,mv -b file.txt destination.txt
+rm,remove single file,rm filename.txt
+rm,remove directory recursively,rm -r directory
+rm,remove with interactive prompt,rm -i filename.txt
+rm,force remove without prompting,rm -f filename.txt
+rm,remove multiple files,rm file1.txt file2.txt file3.txt
+ln,create hard link,ln original.txt hardlink
+ln,create symbolic link,ln -s original.txt symlink
+ln,create symbolic link with relative path,ln -sr original.txt symlink
+ln,overwrite existing link,ln -f original.txt link
+ln,create multiple links,ln original1.txt original2.txt /destination/
+ping,test network connectivity to a host,ping google.com
+ping,send 5 packets to a host,ping -c 5 google.com
+ping,ping with larger packet size,ping -s 1000 google.com
+ping,show numeric IP addresses,ping -n google.com
+ping,set packet interval timing,ping -i 2 google.com
+traceroute,trace network path to host,traceroute google.com
+traceroute,limit number of hops,traceroute -m 10 google.com
+traceroute,use UDP instead of ICMP,traceroute -U google.com
+traceroute,show IP addresses only,traceroute -n google.com
+traceroute,set packet size,traceroute -q 3 -w 2 google.com
+netstat,show network interfaces,netstat -ie
+netstat,show active network connections,netstat -tuln
+netstat,display routing table,netstat -r
+netstat,show network statistics,netstat -s
+netstat,show multicast group memberships,netstat -g
+mkfs,create ext4 filesystem,mkfs -t ext4 /dev/sdb1
+mkfs,create vfat filesystem,mkfs -t vfat /dev/sdb1
+mkfs,create ext3 filesystem,mkfs -t ext3 /dev/sdb1
+mkfs,create xfs filesystem,mkfs -t xfs /dev/sdb1
+mkfs,create btrfs filesystem,mkfs -t btrfs /dev/sdb1
+fsck,check filesystem integrity,fsck /dev/sdb1
+fsck,automatically repair filesystem,fsck -y /dev/sdb1
+fsck,verbose filesystem check,fsck -v /dev/sdb1
+fsck,check specific filesystem type,fsck -t ext4 /dev/sdb1
+fsck,force filesystem check,fsck -f /dev/sdb1
+dd,clone entire disk,dd if=/dev/sdb of=/dev/sdc
+dd,create disk image,dd if=/dev/sdb of=disk.img
+dd,copy specific block size,dd if=/dev/sdb of=disk.img bs=4096
+dd,copy limited number of blocks,dd if=/dev/sdb of=disk.img bs=1M count=100
+dd,create zero-filled file,dd if=/dev/zero of=largefile bs=1M count=1000
+md5sum,generate file checksum,md5sum file.iso
+md5sum,verify downloaded file,md5sum -c file.iso.md5
+md5sum,check multiple files,md5sum file1.iso file2.iso
+md5sum,output only checksum,md5sum -b file.iso
+md5sum,check against known checksum,"echo ""checksum file.iso"" | md5sum -c"
+gzip,compress a single file,gzip filename.txt
+gzip,decompress a file,gzip -d filename.txt.gz
+gzip,compress multiple files,gzip file1.txt file2.txt file3.txt
+gzip,compress and keep original file,gzip -k filename.txt
+gzip,show compression details,gzip -v filename.txt
+tar,create a gzipped archive,tar czf archive.tar.gz directory
+tar,create a bzip2 compressed archive,tar cjf archive.tar.bz2 directory
+tar,extract a compressed archive,tar xzf archive.tar.gz
+tar,list contents of archive,tar tzf archive.tar.gz
+tar,extract specific files from archive,tar xzf archive.tar.gz specific_file
+ssh,connect to remote server,ssh username@hostname
+ssh,execute remote command,ssh username@hostname 'ls -l'
+ssh,copy files via ssh,scp localfile username@hostname:/remote/path
+ssh,tunnel with port forwarding,ssh -L localport:remotehost:remoteport username@hostname
+ssh,use specific private key,ssh -i /path/to/private_key username@hostname
+zip,create zip archive,zip archive.zip file1 file2
+zip,create recursive zip archive,zip -r archive.zip directory
+zip,list zip archive contents,zip -l archive.zip
+zip,extract zip archive,unzip archive.zip
+zip,extract specific files from zip,unzip archive.zip specific_file
+unzip,extract zip archive,unzip archive.zip
+unzip,list zip archive contents,unzip -l archive.zip
+unzip,extract to specific directory,unzip -d /target/directory archive.zip
+unzip,view contents without extracting,unzip -v archive.zip
+unzip,extract specific files,unzip archive.zip file1 file2
+rsync,synchronize local directories,rsync -av source/ destination/
+rsync,backup system directories,rsync -av --delete /etc /home /backup
+rsync,synchronize over network,rsync -avz -e ssh source/ user@remote:/destination
+rsync,exclude files during sync,rsync -av --exclude='*.log' source/ destination/
+rsync,dry run to preview changes,rsync -avn source/ destination/
+rm,remove a file,rm filename
+rm,remove multiple files,rm file1 file2 file3
+rm,remove directory recursively,rm -rf directory
+rm,interactive file removal,rm -i filename
+rm,force removal without prompts,rm -f filename
+mkdir,create a directory,mkdir newdirectory
+mkdir,create nested directories,mkdir -p parent/child/grandchild
+mkdir,set specific permissions,mkdir -m 755 newdirectory
+mkdir,create multiple directories,mkdir dir1 dir2 dir3
+mkdir,verbose directory creation,mkdir -v newdirectory
+ls,list files in current directory,ls
+ls,show hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show human-readable file sizes,ls -lh
+ls,sort files by modification time,ls -lt
+grep,search for pattern in file,grep pattern filename
+grep,case-insensitive search,grep -i pattern filename
+grep,count matching lines,grep -c pattern filename
+grep,show line numbers,grep -n pattern filename
+grep,invert match,grep -v pattern filename
+grep,search for lines starting with specific text,grep '^zip' file.txt
+grep,search for lines ending with specific text,grep 'zip$' file.txt
+grep,search for exact line match,grep '^zip$' file.txt
+grep,search case-insensitively,grep -i 'pattern' file.txt
+grep,search multiple files,grep 'pattern' file1.txt file2.txt
+echo,print text to standard output,"echo ""Hello World"""
+echo,print environment variable,echo $LANG
+ls,list files in /usr/sbin starting with uppercase,ls /usr/sbin/[[:upper:]]*
+ls,list files with specific pattern,ls /usr/sbin/[A-Z]*
+locale,display current locale settings,locale
+export,set environment variable,export LANG=POSIX
+egrep,extended regex search,egrep 'pattern1|pattern2' file.txt
+grep,use extended regex,grep -E 'pattern1|pattern2' file.txt
+cat,create a new text file,cat > filename.txt
+cat,display file contents,cat filename.txt
+cat,number lines in a file,cat -n filename.txt
+cat,show non-printing characters,cat -A filename.txt
+cat,suppress multiple blank lines,cat -s filename.txt
+sort,sort lines of a text file alphabetically,sort filename.txt
+sort,sort lines numerically,sort -n filename.txt
+sort,sort lines in reverse order,sort -r filename.txt
+sort,sort ignoring case,sort -f filename.txt
+sort,sort by specific field,sort -k2 filename.txt
+sort,merge and sort multiple files,sort file1.txt file2.txt file3.txt
+grep,search file for pattern,"grep ""pattern"" filename.txt"
+grep,search case-insensitive,"grep -i ""pattern"" filename.txt"
+grep,show line numbers with matches,"grep -n ""pattern"" filename.txt"
+grep,invert match (show non-matching lines),"grep -v ""pattern"" filename.txt"
+grep,use regular expressions,"grep -E ""regex_pattern"" filename.txt"
+find,search for files by name,"find . -name ""filename"""
+find,search using regular expressions,"find . -regex "".*pattern.*"""
+find,search for files larger than size,find . -size +10M
+locate,find files by name quickly,locate filename
+locate,use regular expression to find files,"locate --regex ""pattern"""
+zgrep,search compressed files,"zgrep ""pattern"" filename.gz"
+less,view file contents,less filename.txt
+less,search within file,less filename.txt (then press / and enter search term)
+vim,open file for editing,vim filename.txt
+vim,search within file,vim filename.txt (then press / and enter search term)
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+ls,list files in specific directory,ls /usr/bin
+ls,show file details with color,ls --color=auto
+sort,sort lines alphabetically,sort filename
+sort,sort lines numerically,sort -n filename
+sort,sort lines in reverse order,sort -r filename
+sort,sort by specific field,sort -k 2 filename
+sort,sort and remove duplicates,sort -u filename
+cut,extract first column from file,cut -f 1 filename
+cut,extract specific characters from line,cut -c 1-5 filename
+cut,extract multiple columns,cut -f 1
+cut,use custom delimiter,cut -d ':' -f 1 filename
+cut,extract complement of selection,cut --complement -f 2 filename
+uniq,remove duplicate lines,sort filename | uniq
+uniq,count duplicate lines,sort filename | uniq -c
+uniq,show only duplicate lines,sort filename | uniq -d
+uniq,show only unique lines,sort filename | uniq -u
+uniq,ignore case when checking duplicates,sort filename | uniq -i
+paste,merge lines from multiple files,paste file1 file2
+paste,merge columns side by side,paste -d '\t' file1 file2
+paste,use custom delimiter,paste -d '
+paste,merge multiple files,paste file1 file2 file3
+paste,number lines while merging,paste -d '\t' <(seq 5) file1
+join,join files on common field,join file1 file2
+join,join files with custom delimiter,join -t ':' file1 file2
+join,join files ignoring case,join -i file1 file2
+join,show only matching lines,join -1 1 -2 1 file1 file2
+join,suppress common field,join -v 1 file1 file2
+cat,display file contents,cat filename
+cat,show non-printing characters,cat -A filename
+cat,number lines while displaying,cat -n filename
+cat,concatenate multiple files,cat file1 file2 file3
+cat,append content to file,cat additional_content >> existing_file
+expand,convert tabs to spaces,expand filename
+expand,specify tab width,expand -t 4 filename
+expand,convert tabs in multiple files,expand file1 file2 file3
+expand,output to new file,expand filename > newfile
+expand,read from standard input,cat file | expand
+nl,number lines in a text file,nl file.txt
+nl,number only non-blank lines,nl -b t file.txt
+nl,number all lines,nl -b a file.txt
+nl,number lines with custom start number,nl -v 10 file.txt
+nl,add custom separator to line numbers,nl -s ': ' file.txt
+nl,set line number width to 3 characters,nl -w 3 file.txt
+sort,sort lines alphabetically,sort file.txt
+sort,sort numerically by second field,sort -k 2n file.txt
+sort,sort in reverse order,sort -r file.txt
+sort,sort unique lines,sort -u file.txt
+sort,sort by multiple fields,sort -k 1
+sed,replace text in a file,sed 's/old/new/g' file.txt
+sed,delete lines matching a pattern,sed '/pattern/d' file.txt
+sed,insert text at the beginning of a file,sed '1 i\New text' file.txt
+sed,append text at the end of a file,sed '$ a\New text' file.txt
+sed,run commands from a script file,sed -f script.sed file.txt
+echo,print text to terminal,"echo ""Hello World"""
+echo,print text with no newline,"echo -n ""Hello"""
+echo,print text with escaped characters,"echo -e ""Line1\nLine2"""
+echo,append text to a file,"echo ""New line"" >> file.txt"
+echo,overwrite file with text,"echo ""New content"" > file.txt"
+fold,wrap text to 12 characters,fold -w 12 file.txt
+fold,wrap text at word boundaries,fold -w 12 -s file.txt
+fold,wrap text with default 80 characters,fold file.txt
+fmt,format text to 50 characters wide,fmt -w 50 file.txt
+fmt,format comments in code,fmt -w 50 -p '# ' file.txt
+fmt,use uniform spacing,fmt -u file.txt
+pr,paginate text for printing,pr -l 15 -w 65 file.txt
+pr,add page numbers,pr -n file.txt
+pr,set custom page header,"pr -h ""My Report"" file.txt"
+printf,print formatted string,"printf ""Hello %s\n"" World"
+printf,print number with leading zeros,"printf ""%05d"" 380"
+printf,print floating point number,"printf ""%.2f"" 3.14159"
+printf,print hexadecimal number,"printf ""%x"" 380"
+printf,print with custom width,"printf ""%10s"" ""text"""
+zcat,display contents of a gzipped file,zcat /path/to/file.gz
+zcat,view first few lines of compressed file,zcat /path/to/file.gz | head
+zcat,pipe compressed file contents to another command,"zcat file.log.gz | grep ""error"""
+zcat,save uncompressed contents to new file,zcat compressed.txt.gz > uncompressed.txt
+zcat,list multiple compressed files,zcat file1.gz file2.gz file3.gz
+command,prompt,output
+groff,convert man page to ASCII text,zcat /usr/share/man/man1/ls.1.gz | groff -mandoc -T ascii
+groff,generate PostScript output,zcat /usr/share/man/man1/ls.1.gz | groff -mandoc
+groff,create PDF from man page,zcat /usr/share/man/man1/ls.1.gz | groff -mandoc > output.ps
+groff,format text with specific macro package,groff -man input.txt > output
+groff,convert to different output formats,groff -T ps -man input.txt > output.ps
+command,prompt,output
+ps2pdf,convert PostScript to PDF,ps2pdf input.ps output.pdf
+ps2pdf,convert multiple PostScript files,ps2pdf file1.ps file2.ps output.pdf
+ps2pdf,specify output directory,ps2pdf ~/documents/file.ps ~/Desktop/file.pdf
+ps2pdf,compress PDF during conversion,ps2pdf -dPDFSETTINGS=/screen input.ps output.pdf
+ps2pdf,preserve hyperlinks during conversion,ps2pdf -dPDFSETTINGS=/prepress input.ps output.pdf
+command,prompt,output
+sed,modify text using script file,sed -f script.sed input.txt > output.txt
+sed,replace text in file,sed 's/old/new/g' input.txt > output.txt
+sed,delete lines matching pattern,sed '/pattern/d' input.txt > output.txt
+sed,insert text at beginning of file,sed '1i\New line of text' input.txt
+sed,append text at end of file,sed '$a\Appended text' input.txt
+command,prompt,output
+sort,sort file alphabetically,sort input.txt > sorted.txt
+sort,sort numerically,sort -n input.txt > numeric_sorted.txt
+sort,sort by specific column,sort -k 2 input.txt
+sort,reverse sort order,sort -r input.txt
+sort,remove duplicate lines,sort -u input.txt
+command,prompt,output
+cat,display file contents,cat file.txt
+cat,show non-printing characters,cat -A file.txt
+cat,number lines in output,cat -n file.txt
+cat,concatenate multiple files,cat file1.txt file2.txt > combined.txt
+cat,append to file,cat additional.txt >> existing.txt
+command,prompt,output
+nroff,format man pages,nroff -man input.txt > output
+nroff,convert to ASCII,nroff -man input.txt | cat -A
+nroff,specify output format,nroff -Tascii -man input.txt
+nroff,process with specific macro package,nroff -man -mlocal input.txt
+nroff,generate formatted text,nroff -man input.txt > formatted.txt
+command,prompt,output
+tbl,format tables in text,tbl input.txt > formatted_table.txt
+tbl,preprocess for groff,tbl input.txt | groff -t > output.ps
+tbl,create ASCII table,tbl input.txt | groff -t -T ascii
+tbl,handle complex table layouts,tbl -TX input.txt > output
+tbl,validate table markup,tbl -c input.txt
+pr,paginate text into multiple columns,pr -3 /path/to/file
+pr,double-space output,pr -d /path/to/file
+pr,number lines in output,pr -n /path/to/file
+pr,set custom page width,pr -w 80 /path/to/file
+pr,set custom page length,pr -l 66 /path/to/file
+command,prompt,output
+ls,list files in current directory,ls
+ls,list files with details,ls -l
+ls,show hidden files,ls -a
+ls,show file sizes in human-readable format,ls -lh
+ls,sort files by modification time,ls -t
+command,prompt,output
+lpr,print a text file,lpr document.txt
+lpr,print multiple copies,lpr -#3 document.txt
+lpr,print to specific printer,lpr -P printer_name document.txt
+lpr,print with pretty formatting,lpr -p document.txt
+lpr,delete file after printing,lpr -r document.txt
+command,prompt,output
+lp,print a text file,lp document.txt
+lp,print multiple copies,lp -n 3 document.txt
+lp,print in landscape orientation,lp -o landscape document.txt
+lp,scale file to fit page,lp -o fitplot document.txt
+lp,set custom characters per inch,lp -o cpi=12 document.txt
+command,prompt,output
+a2ps,convert text to PostScript,a2ps -o output.ps input.txt
+a2ps,print with two columns,a2ps --columns 2 input.txt
+a2ps,set custom font size,a2ps -f 10 input.txt
+a2ps,print in landscape,a2ps -r input.txt
+a2ps,add line numbers,a2ps --line-numbers=5 input.txt
+command,prompt,output
+lpstat,show printer status,lpstat -a
+lpstat,display default printer,lpstat -d
+lpstat,show detailed printer info,lpstat -p
+lpstat,check print server status,lpstat -r
+lpstat,generate complete status report,lpstat -t
+command,prompt,output
+lpq,check printer queue status,lpq
+lpq,check specific printer queue,lpq -P printer_name
+lpq,show detailed job information,lpq -l
+lpq,monitor queue updates,lpq -t
+lpq,display job details,lpq
+command,prompt,output
+cancel,cancel specific print job,cancel job_number
+cancel,cancel all jobs for user,cancel -u username
+cancel,cancel jobs on specific printer,cancel -P printer_name
+cancel,cancel multiple jobs,cancel job1 job2 job3
+cancel,show cancellation details,cancel -v job_number
+command,prompt,output
+lprm,remove specific print job,lprm job_number
+lprm,remove all jobs for user,lprm -
+lprm,remove jobs on specific printer,lprm -P printer_name
+lprm,remove multiple jobs,lprm job1 job2 job3
+lprm,show removal details,lprm -v job_number
+mkdir,create a new directory,mkdir new_directory
+mkdir,create multiple directories at once,mkdir dir1 dir2 dir3
+mkdir,create nested directories,mkdir -p parent/child/grandchild
+mkdir,create directory with specific permissions,mkdir -m 755 restricted_dir
+mkdir,create directory with verbose output,mkdir -v important_folder
+cd,change to home directory,cd ~
+cd,change to previous directory,cd -
+cd,change to parent directory,cd ..
+cd,change to absolute path,cd /var/log
+cd,change to directory with spaces,"cd ""My Documents"""
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+ftp,connect to an FTP server,ftp ftp.example.com
+ftp,download a file,get filename
+ftp,upload a file,put filename
+ftp,list remote files,ls
+ftp,disconnect from server,bye
+tar,extract tar.gz file,tar xzf filename.tar.gz
+tar,create tar.gz archive,tar czf archive.tar.gz directory
+tar,list contents of tar file,tar tvf filename.tar.gz
+tar,extract specific files,tar xzf filename.tar.gz specific_file
+tar,extract tar file to specific directory,tar xzf filename.tar.gz -C /path/to/directory
+which,find location of a command,which gcc
+which,search for all instances of a command,which -a python
+which,show all matching executables,which -a ls
+which,suppress error messages,which -s command
+which,display full path of command,which -a command
+less,view file contents,less filename
+less,view file with line numbers,less -N filename
+less,search within file,less +/searchterm filename
+less,view file from specific line,less +10 filename
+less,quit less without displaying file,less -f filename
+gcc,compile a C program,gcc program.c -o program
+gcc,compile with warnings,gcc -Wall program.c -o program
+gcc,compile with optimization,gcc -O2 program.c -o program
+gcc,compile for debugging,gcc -g program.c -o program
+gcc,compile multiple source files,gcc file1.c file2.c -o program
+make,build program from Makefile,make
+make,build specific target,make target_name
+make,display commands without executing,make -n
+make,continue after error,make -k
+make,set specific variable,"make CFLAGS=""-Wall"""
+sudo,run command as superuser,sudo command
+sudo,run command as specific user,sudo -u username command
+sudo,run shell with root privileges,sudo -i
+sudo,execute command without password prompt,sudo -n command
+sudo,list sudo permissions,sudo -l
+vim,open a file for editing,vim filename
+vim,create a new file,vim newfile.txt
+vim,edit with syntax highlighting,:syntax on
+vim,set tab stops,:set tabstop=4
+vim,turn on auto-indent,:set autoindent
+chmod,make a file executable,chmod 755 filename
+chmod,give read/write permissions,chmod 644 filename
+chmod,restrict file to owner only,chmod 700 filename
+echo,print text to screen,"echo ""Hello World"""
+echo,print variable value,echo $VARIABLE
+echo,print multiple lines,"echo -e ""Line 1\nLine 2"""
+echo,suppress newline,"echo -n ""No newline"""
+echo,print with color,"echo -e ""\e[31mRed Text\e[0m"""
+mkdir,create a new directory,mkdir newdir
+mkdir,create nested directories,mkdir -p parent/child
+mv,move a file,mv oldname newname
+mv,move multiple files,mv file1 file2 destination/
+ls,list files,ls
+ls,show hidden files,ls -a
+ls,show detailed list,ls -l
+ls,show human-readable sizes,ls -lah
+ls,sort by modification time,ls -t
+find,search for files,find /path -name filename
+find,search by type,find /path -type f
+find,search with permissions,find /path -perm 0600
+source,reload shell configuration,source ~/.bashrc
+source,execute shell script,source scriptname
+export,set environment variable,export PATH=$PATH:~/bin
+export,create new variable,"export MYVAR=""value"""
+echo,display text on screen,"echo ""Hello World"""
+echo,display variable value,echo $HOSTNAME
+echo,display multiple arguments,echo Hello World
+echo,display with escape sequences,"echo -e ""Line 1\nLine 2"""
+echo,suppress newline,"echo -n ""No newline"""
+cp,copy a file,cp source.txt destination.txt
+cp,copy multiple files to directory,cp file1.txt file2.txt /path/to/directory
+cp,copy with preserving attributes,cp -p original.txt backup.txt
+cp,copy recursively,cp -r /source/directory /destination/directory
+cp,copy with interactive mode,cp -i source.txt destination.txt
+mv,rename a file,mv oldname.txt newname.txt
+mv,move file to directory,mv file.txt /path/to/directory
+mv,move multiple files,mv file1.txt file2.txt /destination
+mv,move with interactive prompt,mv -i source.txt destination.txt
+mv,move and create parent directories,mv -p source.txt /deep/nested/path
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+date,display current date and time,date
+date,show specific date format,"date +""%Y-%m-%d"""
+date,show UTC time,date -u
+date,show week number,"date +""%V"""
+date,show day of year,"date +""%j"""
+ftp,connect to FTP server,ftp ftp.example.com
+ftp,download file,ftp -n < script.txt
+ftp,upload file,ftp -n -u ftp.example.com localfile
+ftp,specify port,ftp -P 2121 ftp.example.com
+ftp,disable auto login,ftp -n
+cat,display file contents,cat filename.txt
+cat,concatenate multiple files,cat file1.txt file2.txt
+cat,number lines,cat -n filename.txt
+cat,show non-printing characters,cat -A filename.txt
+cat,append to file,cat file1.txt >> file2.txt
+declare,create read-only variable,declare -r CONSTANT=value
+declare,create integer variable,declare -i NUMBER=42
+ls,list files in specific directory,ls /path/to/directory
+bash,run a bash shell script,bash script.sh
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+echo,print text to console,"echo ""Hello World"""
+echo,print variable value,echo $HOME
+echo,print multiple arguments,echo Hello World
+echo,print with newline suppression,"echo -n ""No newline"""
+echo,print with color,"echo -e ""\e[31mRed Text\e[0m"""
+test,check if file exists,test -e /path/to/file
+test,check if file is readable,test -r /path/to/file
+test,check if file is a directory,test -d /path/to/directory
+test,check if file is writable,test -w /path/to/file
+test,check if file is executable,test -x /path/to/script
+true,return successful exit status,true
+false,return unsuccessful exit status,false
+uptime,show system uptime,uptime
+df,show disk space usage,df -h
+du,show directory space usage,du -sh /home/*
+cat,display file contents,cat filename
+return,exit a shell function with status,return 0
+bash,run bash shell,bash
+id,get user ID,id
+id,get numeric user ID,id -u
+id,get group ID,id -g
+id,show all user and group information,id -a
+mkdir,create a directory,mkdir temp
+cd,change directory,cd temp
+du,show disk usage for a directory,du -sh /home
+du,show disk usage for home directory,du -sh $HOME
+echo,print text to standard output,"echo ""Hello World"""
+echo,print text to standard error,"echo ""Error message"" >&2"
+exit,exit script with status code,exit 1
+test,check if file exists,[ -f filename ]
+test,check if directory exists,[ -d dirname ]
+read,read user input,"read -p ""Enter name: "" name"
+read,read input with prompt,"read -p ""Enter age: "" age"
+read,read input with character limit,"read -n 1 -p ""Continue? (y/n): "" choice"
+read,read input in raw mode,read -r input_line
+read,read input into array,read -a array_name
+read,read input from user,read input_var
+read,read input with prompt,"read -p ""Enter value: "" input_var"
+read,read input with timeout,read -t 10 input_var
+read,read secret/hidden input,read -s secret_pass
+read,read multiple variables,read var1 var2 var3
+echo,display text to screen,"echo ""Hello World"""
+echo,display text without newline,"echo -n ""Enter value: """
+grep,search file for pattern,"grep ""pattern"" filename"
+grep,search file case-insensitive,"grep -i ""pattern"" filename"
+grep,count matches in file,"grep -c ""pattern"" filename"
+grep,show line numbers,"grep -n ""pattern"" filename"
+grep,search multiple files,"grep ""pattern"" file1 file2"
+df,show disk space usage,df
+df,show human-readable sizes,df -h
+du,show directory space usage,du
+du,show summary of directory,du -sh
+id,show user identity,id
+id,show numeric user ID,id -u
+uptime,show system uptime,uptime
+wc,count words in file,wc filename
+wc,count lines in file,wc -l filename
+date,display current date and time,date
+date,show specific date format,"date +""%Y-%m-%d"""
+date,display date in UTC,date -u
+date,show day of the week,"date +""%A"""
+date,display date with time zone,"date +""%c %Z"""
+cal,display current month's calendar,cal
+cal,show calendar for specific year,cal 2024
+cal,display 3-month calendar view,cal -3
+cal,show previous/next month,cal -1
+cal,display Julian calendar,cal -j
+df,show disk space usage,df
+df,display human-readable sizes,df -h
+df,show filesystem type,df -T
+df,display total disk usage,df -t
+df,exclude specific filesystem type,df -x tmpfs
+free,display memory usage,free
+free,show memory in human-readable format,free -h
+free,display memory in kilobytes,free -k
+free,show total memory usage,free -t
+free -m,show memory in megabytes,free -m
+exit,end terminal session,exit
+exit,close all terminal windows,exit -f
+pwd,print current working directory,pwd
+pwd,resolve symbolic links,pwd -P
+pwd,print logical path,pwd -L
+pwd,print full path,pwd -e
+cd,change to home directory,cd
+cd,change to specific directory,cd /path/to/directory
+cd,move up one directory,cd ..
+cd,go to previous directory,cd -
+cd,change to root directory,cd /
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+bash,start bash shell,bash
+bash,run bash script,bash script.sh
+bash,check script syntax,bash -n script.sh
+bash,execute commands from string,"bash -c ""command"""
+bash,run bash in debug mode,bash -x
+konsole,open KDE terminal emulator,konsole
+konsole,open terminal with specific profile,konsole --profile myprofile
+konsole,start terminal in fullscreen,konsole --fullscreen
+konsole,run command in new terminal,konsole -e command
+konsole,set window title,"konsole --title ""My Terminal"""
+gnome-terminal,open GNOME terminal,gnome-terminal
+gnome-terminal,run command in new window,gnome-terminal -x command
+gnome-terminal,create new tab,gnome-terminal --tab
+gnome-terminal,set window geometry,gnome-terminal --geometry 80x24
+gnome-terminal,disable menu bar,gnome-terminal --hide-menubar
+cat,display file contents,cat filename.txt
+cat,concatenate multiple files,cat file1.txt file2.txt
+cat,display file contents with line numbers,cat -n filename.txt
+cat,create a new file with content,cat > newfile.txt
+cat,append content to an existing file,cat >> existingfile.txt
+echo,print text to console,"echo ""Hello World"""
+echo,print environment variable,echo $HOME
+echo,print multiple arguments,echo arg1 arg2 arg3
+echo,disable interpretation of backslash escapes,"echo -n ""No newline"""
+echo,print text with color,"echo -e ""\e[31mRed Text\e[0m"""
+read,read user input,read userInput
+read,read input with prompt,"read -p ""Enter name: "" name"
+read,read input with timeout,read -t 5 userInput
+read,read input with character limit,read -n 3 shortInput
+read,read input silently (password),read -s password
+uptime,show system uptime,uptime
+uptime,show uptime with more details,uptime -p
+uptime,show uptime since last boot,uptime -s
+uptime,show load averages,uptime
+uptime,show login time,uptime -l
+df,show disk space usage,df
+df,show disk space in human-readable format,df -h
+df,show disk space for specific filesystem,df /home
+df,show inode information,df -i
+df,show total disk space,df -l
+du,show disk usage for current directory,du
+du,show disk usage in human-readable format,du -h
+du,show total disk usage,du -sh
+du,show disk usage for specific directory,du -h /home
+du,show disk usage for all subdirectories,du -h --max-depth=1
+id,show current user ID,id
+id,show numeric user ID,id -u
+id,show user and group information,id $USER
+id,show group IDs,id -G
+id,show real and effective user/group IDs,id -r
+sleep,pause script execution for seconds,sleep 5
+sleep,pause with minutes,sleep 2m
+sleep,pause with hours,sleep 1h
+sleep,pause with fractional seconds,sleep 0.5
+sleep,pause with multiple time units,sleep 1m 30s
+sort,sort lines of text,sort filename.txt
+sort,sort numerically,sort -n numbers.txt
+sort,sort in reverse order,sort -r filename.txt
+sort,sort unique lines,sort -u filename.txt
+sort,sort by specific column,sort -k2 filename.txt
+echo,display simple text message,"echo ""Hello World"""
+echo,display text to standard error,"echo ""Error message"" >&2"
+echo,display variable value,"echo ""$HOME"""
+echo,display multiple arguments,echo First Second Third
+echo,display text with special characters,"echo ""Line with \""quotes\"""""
+read,prompt user for input,"read -p ""Enter name: "" username"
+read,read input with timeout,"read -t 5 -p ""Enter quickly: "" response"
+read,read input into specific variable,read input_var
+read,read multiple variables,read first last age
+read,read with hidden input,read -s password
+df,show disk space usage,df -h
+df,show disk space for specific filesystem,df -h /home
+df,show disk space in megabytes,df -m
+df,show inode information,df -i
+df,show filesystem type,df -T
+du,show disk usage for current directory,du -sh
+du,show disk usage for specific directory,du -sh /home/*
+du,show detailed disk usage,du -ah
+du,show total disk usage,du -ch
+du,show disk usage excluding certain files,du -sh --exclude=*.tmp
+id,show current user ID,id
+id,show numeric user ID,id -u
+id,show group information,id -g
+id,show all group memberships,id -G
+id,show user and group names,id -un
+uptime,show system uptime,uptime
+uptime,show load averages,uptime -V
+uptime,show short uptime info,uptime -p
+set,set shell options,set -x
+set,unset shell options,set +x
+export,set environment variable,export PATH=$PATH:/new/path
+export,create persistent variable,"export MYVAR=""value"""
+export,show all exported variables,export -p
+echo,print a simple message,"echo ""Hello"
+echo,print environment variable,echo $HOSTNAME
+echo,print to standard error,"echo ""Error message"" >&2"
+uptime,show system uptime and load,uptime
+uptime,show short uptime format,uptime -s
+df,show disk space usage,df
+df,show human-readable disk space,df -h
+id,show current user ID,id
+id,show numeric user ID,id -u
+du,show disk usage of directory,du
+du,show summary of disk usage,du -sh
+basename,extract filename from path,basename /path/to/file.txt
+basename,remove file extension,basename /path/to/file.txt .txt
+file,determine file type,file filename
+file,show mime type,file -i filename
+stat,display file status,stat filename
+stat,show format with custom output,"stat -f ""%a %b"" filename"
+shift,move positional parameters,shift
+shift,move multiple parameters,shift 2
+read,read user input,read variable_name
+read,read input with prompt,"read -p ""Enter name: "" name"
+case,perform pattern matching,case $variable in pattern) commands;; esac
+basename,extract filename from a path,basename /path/to/file.txt
+date,get current date and time,date
+date,format date in specific format,"date +""%Y-%m-%d"""
+uptime,show system uptime,uptime
+df,display disk space usage,df -h
+du,estimate file space usage,du -sh /home/*
+id,print user and group information,id -u
+touch,create an empty file or update timestamp,touch newfile.txt
+cat,display file contents,cat filename.txt
+echo,print text to terminal,"echo ""Hello World"""
+strings,find printable strings in a file,strings binary_file
+wc,count lines, words
+find,search for files in a directory,find /home -type f
+cut,remove sections from lines,cut -f 1 filename.txt
+printf,format and print data,"printf ""%s %d\n"" ""Value"" 42"
+shift,shift positional parameters,shift
+read,read input from user,"read -p ""Enter name: "" name"
+echo,display text or variable value,"echo ""Hello World"""
+echo,display variable contents,echo $HOME
+echo,display multiple items,"echo ""User: $USER"
+echo,display with formatting,"echo -e ""Line 1\nLine 2"""
+echo,suppress newline,"echo -n ""No newline after this"""
+bc,perform complex mathematical calculations,"echo ""5 * 3"" | bc"
+bc,calculate floating point division,"echo ""scale=2; 10/3"" | bc"
+bc,perform exponential calculations,"echo ""2^8"" | bc"
+bc,calculate square root,"echo ""sqrt(16)"" | bc"
+bc,perform complex math with precision,"echo ""scale=4; (10/3) * 2"" | bc"
+time,measure execution time of a command,time ls
+time,measure script runtime,time ./myscript.sh
+time,display detailed timing information,time -v ls
+time,output to file,time -o timelog.txt ls
+time,format output,"time -f ""%E real"
+strings,extract printable characters from binary files,strings /bin/ls
+strings,show strings from specific file,strings myprogram
+strings,limit string length,strings -n 10 myfile
+strings,output to file,strings myprogram > strings.txt
+strings,show encoding,strings -e l myfile
+printf,print formatted output,"printf ""Hello %s\n"" ""World"""
+printf,format numbers,"printf ""%05d\n"" 42"
+printf,multiple arguments,"printf ""%s is %d years old\n"" ""Alice"" 30"
+printf,floating point formatting,"printf ""%.2f\n"" 3.14159"
+printf,color output,"printf ""\033[0;31mRed text\033[0m\n"""
+bc,perform basic addition,"bc <<< ""2+2"""
+bc,calculate complex mathematical expression,"bc <<< ""10 * (5 + 3)"""
+bc,set decimal precision,"echo ""scale=2; 10/3"" | bc"
+bc,perform power calculations,"bc <<< ""2^3"""
+bc,do floating point math,"bc <<< ""10.5 + 20.3"""
+stat,get file modification time,stat -c %y filename
+stat,display file details,stat filename
+stat,show file permissions,stat -c %a filename
+stat,show file owner,stat -c %U filename
+stat,show file size,stat -c %s filename
+cut,extract specific column from text,cut -d' ' -f2 filename
+cut,extract character range,cut -c1-5 filename
+cut,select multiple columns,cut -d'
+cut,use custom delimiter,cut -d':' -f1 /etc/passwd
+cut,suppress lines without delimiter,cut -d'
+basename,extract filename from path,basename /path/to/file.txt
+basename,remove file extension,basename /path/to/file.txt .txt
+basename,get script name,"basename ""$0"""
+printf,print formatted text,"printf ""Hello %s\n"" world"
+printf,format numbers,"printf ""%05d\n"" 42"
+printf,print multiple values,"printf ""%s %d\n"" name 25"
+printf,use custom formatting,"printf ""%.2f\n"" 3.14159"
+printf,print with color,"printf ""\e[32mGreen text\e[0m\n"""
+echo,print text to terminal,"echo ""Hello World"""
+echo,print variable value,echo $HOME
+echo,print multiple arguments,echo Hello World
+echo,print with newline suppression,"echo -n ""No newline"""
+echo,print with escape interpretation,"echo -e ""Line1\nLine2"""
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+cat,display file contents,cat filename.txt
+cat,concatenate multiple files,cat file1.txt file2.txt
+cat,number lines while displaying,cat -n filename.txt
+cat,show non-printing characters,cat -A filename.txt
+cat,append content to file,cat file1.txt >> newfile.txt
+read,read user input into variable,read username
+read,read input with prompt,"read -p ""Enter name: "" name"
+read,read input with timeout,read -t 5 variable
+read,read input with character limit,read -n 3 short_input
+read,read input silently (password),read -s password
+unset,remove variable,unset variable_name
+unset,remove array element,unset 'array[2]'
+unset,remove entire array,unset array
+trap,ignore specific signal,"trap ""echo Ignored"" SIGINT"
+trap,exit script on signal,"trap ""exit 0"" SIGINT"
+trap,log signal before exit,"trap 'echo ""Interrupted""; exit 1' SIGINT"
+mktemp,create unique temporary file,mktemp
+mktemp,create unique temporary directory,mktemp -d
+mktemp,specify template for temp file,mktemp /tmp/myfile.XXXXXX
+basename,extract filename from path,basename /path/to/file.txt
+sleep,pause script execution,sleep 5
+sleep,pause with fractional seconds,sleep 0.5
+mktemp,create a temporary file in /tmp,mktemp /tmp/foobar.XXXXXXXXXX
+mktemp,create a temporary file with specific prefix,mktemp /tmp/myapp.XXXXXX
+mktemp,create a temporary directory,mktemp -d /tmp/mydir.XXXXXX
+mktemp,create a temporary file with custom location,mktemp $HOME/tmp/tempfile.XXXXXXXXXX
+mktemp,create a temporary file and print its name,mktemp -p /tmp
+mkdir,create a directory in home folder,mkdir $HOME/tmp
+mkdir,create multiple nested directories,mkdir -p /path/to/deep/directory
+mkdir,create directory with specific permissions,mkdir -m 755 newdir
+mkdir,create multiple directories at once,mkdir dir1 dir2 dir3
+mkdir,create directory with verbose output,mkdir -v newdir
+wait,pause script until child process completes,wait $pid
+wait,wait for multiple background processes,wait $(jobs -p)
+wait,wait with timeout,wait -n
+wait,wait for specific process ID,wait 1234
+wait,wait and return exit status,wait -f $pid
+mkfifo,create a named pipe,mkfifo mypipe
+mkfifo,create named pipe with specific permissions,mkfifo -m 0644 mypipe
+mkfifo,create multiple named pipes,mkfifo pipe1 pipe2 pipe3
+mkfifo,create named pipe in specific directory,mkfifo /tmp/mypipe
+mkfifo,verify named pipe creation,mkfifo pipe1 && ls -l pipe1
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+command,prompt,output
+man,view manual page for a command,man ls
+man,search for commands containing a keyword,man -k grep
+man,display short description of a command,man -f chmod
+man,show section of manual page,man 3 printf
+man,display manual page in section 8,man 8 mount
+command,prompt,output
+cd,change to home directory,cd
+cd,move to parent directory,cd ..
+cd,change to specific directory,cd /var/log
+cd,go to previous directory,cd -
+cd,change to user's home directory,cd ~username
+command,prompt,output
+pwd,print current working directory,pwd
+pwd,display physical path without symlinks,pwd -P
+pwd,display logical path with symlinks,pwd -L
+pwd,print working directory with environment context,pwd -e
+pwd,verify current directory location,pwd
+command,prompt,output
+mkdir,create a new directory,mkdir newdir
+mkdir,create multiple directories,mkdir dir1 dir2 dir3
+mkdir,create nested directories,mkdir -p parent/child/grandchild
+mkdir,set specific permissions when creating directory,mkdir -m 755 newdir
+mkdir,create directory with verbose output,mkdir -v newproject
+command,prompt,output
+rm,remove a file,rm filename
+rm,remove multiple files,rm file1 file2 file3
+rm,remove directory and contents recursively,rm -r directory
+rm,force remove without prompting,rm -f filename
+rm,interactive removal with confirmation,rm -i filename
+command,prompt,output
+cp,copy a file,cp source destination
+cp,copy multiple files to directory,cp file1 file2 file3 destination/
+cp,copy directory recursively,cp -r sourcedir destdir
+cp,preserve file attributes during copy,cp -p sourcefile destfile
+cp,interactive copy with confirmation,cp -i sourcefile destfile
+command,prompt,output
+mv,move a file,mv sourcefile destination
+mv,rename a file,mv oldname newname
+mv,move multiple files,mv file1 file2 file3 destination/
+mv,interactive move with confirmation,mv -i sourcefile destination
+mv,verbose move with detailed output,mv -v sourcefile destination
+command,prompt,output
+touch,create an empty file,touch newfile
+touch,update file timestamp,touch existingfile
+touch,create multiple files,touch file1 file2 file3
+touch,set specific timestamp,touch -t 202301011200 file
+touch,change only access time,touch -a filename
+command,prompt,output
+chmod,add execute permission,chmod +x script.sh
+chmod,remove write permission,chmod -w filename
+chmod,set specific permissions,chmod 755 script.sh
+chmod,recursive permission change,chmod -R 644 directory
+chmod,modify group permissions,chmod g+w filename
+command,prompt,output
+chown,change file owner,chown newuser filename
+chown,change owner and group,chown newuser:newgroup filename
+chown,recursive ownership change,chown -R newuser:newgroup directory
+chown,preserve existing permissions,chown -c newuser filename
+chown,verbose ownership modification,chown -v newuser filename
+vi,open a file for editing,vi filename.txt
+vi,create a new file,vi newfile.txt
+vi,edit file in read-only mode,vi -R filename.txt
+vi,open file at specific line number,vi +10 filename.txt
+vi,recover unsaved file,vi -r filename.txt
+cut,extract first column from file,cut -f1 filename
+cut,extract specific columns,cut -f2-4 filename
+cut,extract columns using delimiter,cut -d: -f1 filename
+cut,extract characters from line,cut -c1-5 filename
+cut -c1-10 filename,get first 10 characters of each line,cut -c1-10 filename
+paste,merge lines from multiple files,paste file1.txt file2.txt
+paste,merge lines with custom delimiter,paste -d
+paste,merge three files side by side,paste file1.txt file2.txt file3.txt
+paste,merge lines vertically,paste -s file1.txt
+paste,merge with tab delimiter,paste -d'\t' file1.txt file2.txt
+grep,search for pattern in file,"grep ""pattern"" filename"
+grep,case-insensitive search,"grep -i ""pattern"" filename"
+grep,show line numbers,"grep -n ""pattern"" filename"
+grep,count matches,"grep -c ""pattern"" filename"
+grep,search multiple files,"grep ""pattern"" file1.txt file2.txt"
+sed,replace text in file,sed 's/old/new/g' filename
+sed,delete specific lines,sed '1
+sed,print specific lines,sed -n '5
+sed,replace first occurrence,sed 's/old/new/' filename
+sed,edit file in-place,sed -i 's/old/new/g' filename
+cd,change to home directory,cd
+cd,change to specific directory,cd /path/to/directory
+cd,change to parent directory,cd ..
+cd,change to previous directory,cd -
+cd,change to user's home directory,cd ~username
+ls,list files in current directory,ls
+ls,list all files including hidden,ls -a
+ls,list files in long format,ls -l
+ls,list files with human-readable sizes,ls -lh
+ls,list files sorted by modification time,ls -lt
+ls,list files with file type indicators,ls -F
+file,determine file type of a single file,file filename
+file,determine file type of multiple files,file file1 file2 file3
+file,determine file type with more details,file -b filename
+file,follow symbolic links,file -L filename
+file,print mime type,file -i filename
+less,view text file contents,less filename
+less,search within file,less filename (then press / to search)
+less,go to end of file in less,less filename (then press G)
+less,go to beginning of file in less,less filename (then press g)
+less,quit less viewer,less filename (then press q)
+cd,change to home directory,cd ~
+cd,change to root directory,cd /
+cd,change to previous directory,cd -
+cd,change to parent directory,cd ..
+cd,change to specific directory,cd /path/to/directory
+command,prompt,output
+ls,list files in current directory,ls
+ls,show all hidden files,ls -a
+ls,show detailed file information,ls -l
+ls,show files sorted by time,ls -t
+ls,show all files with human-readable sizes,ls -lah
+command,prompt,output
+file,determine file type for single file,file filename
+file,determine file type for multiple files,file file1 file2 file3
+file,show mime type of files,file -i filename
+file,follow symbolic links,file -L filename
+file,print file system type,file -s filename
+command,prompt,output
+less,view text file contents,less filename
+less,view file starting at specific line,less +10 filename
+less,search within file,"less -p ""search term"" filename"
+less,show line numbers,less -N filename
+less,quit without clearing screen,less -X filename
+command,prompt,output
+mkdir,create single directory,mkdir newdir
+mkdir,create multiple directories,mkdir dir1 dir2 dir3
+mkdir,create nested directories,mkdir -p parent/child/grandchild
+mkdir,set specific permissions,mkdir -m 755 newdir
+mkdir,create directory with verbose output,mkdir -v newdir
+command,prompt,output
+cp,copy single file,cp source.txt destination.txt
+cp,copy multiple files to directory,cp file1.txt file2.txt /destination/
+cp,copy directory recursively,cp -r sourcedir destdir
+cp,preserve file attributes,cp -p source.txt destination.txt
+cp,interactive copy with confirmation,cp -i source.txt destination.txt
+command,prompt,output
+mv,rename single file,mv oldname.txt newname.txt
+mv,move file to directory,mv file.txt /destination/
+mv,move multiple files,mv file1.txt file2.txt /destination/
+mv,interactive move with confirmation,mv -i file.txt /destination/
+mv,verbose move operation,mv -v file.txt /destination/
+command,prompt,output
+rm,remove single file,rm filename.txt
+rm,remove multiple files,rm file1.txt file2.txt
+rm,remove directory recursively,rm -r directory
+rm,force remove without prompting,rm -f filename.txt
+rm,interactive remove with confirmation,rm -i filename.txt
+command,prompt,output
+ln,create symbolic link,ln -s /path/to/original /path/to/link
+ln,create hard link,ln /path/to/original /path/to/link
+ln,create symbolic link with relative path,ln -s ../original.txt linkname
+ln,overwrite existing link,ln -sf /new/target existing_link
+ln,create multiple links,ln -s file1.txt link1 file2.txt link2
+cp,copy a single file,cp file1 file2
+cp,copy a file with interactive confirmation,cp -i file1 file2
+cp,copy multiple files to a directory,cp file1 file2 dir1
+cp,copy all files from one directory to another,cp dir1/* dir2
+cp,recursively copy a directory with all attributes,cp -a dir1 dir2
+cp,copy files only if newer,cp -u file1 file2
+cp,show verbose copy progress,cp -v file1 file2
+mv,rename a file,mv oldname newname
+mv,move a file to another directory,mv file1 dir1
+mv,move multiple files to a directory,mv file1 file2 dir1
+mv,move a directory,mv dir1 dir2
+mv,move with interactive confirmation,mv -i file1 file2
+mv,show verbose move progress,mv -v file1 dir1
+mv,move only newer files,mv -u file1 file2
+rm,delete a single file,rm file1
+rm,delete multiple files,rm file1 file2
+rm,delete a directory and its contents,rm -r dir1
+rm,delete files with interactive confirmation,rm -i file1
+rm,forcefully delete files without prompting,rm -f file1
+rm,recursively delete directory without prompting,rm -rf dir1
+rm,show verbose deletion progress,rm -v file1
+ln,create a hard link,ln file1 link1
+ln,create a symbolic link,ln -s file1 link1
+ln,create a symbolic link to a directory,ln -s dir1 link1
+ln,create multiple hard links,ln file1 link1 link2
+ln,create hard links in different directories,ln file1 dir1/link1
+mkdir,create a single directory,mkdir newdir
+mkdir,create multiple directories,mkdir dir1 dir2
+mkdir,create nested directories,mkdir -p parent/child/grandchild
+mkdir,create directory with specific permissions,mkdir -m 755 newdir
+mkdir,create directory and set owner,mkdir -p -m 755 -v newdir
+cd,change to home directory,cd
+cd,change to specific directory,cd /path/to/directory
+cd,change to parent directory,cd ..
+cd,change to previous directory,cd -
+cd,change to user's home directory,cd ~username
+cat,display file contents,cat filename.txt
+cat,create new file with content,cat > newfile.txt
+cat,concatenate multiple files,cat file1.txt file2.txt > combined.txt
+cat,append content to file,cat >> existingfile.txt
+cat,display file contents with line numbers,cat -n filename.txt
+ls,list files in current directory,ls
+ls,list all files including hidden,ls -a
+ls,list files with detailed information,ls -l
+ls,list files sorted by time,ls -t
+ls,show file sizes in human-readable format,ls -lh
+sort,sort lines of text alphabetically,sort filename.txt
+sort,sort lines in reverse order,sort -r filename.txt
+sort,sort numerically,sort -n numbers.txt
+sort,sort and remove duplicates,sort -u filename.txt
+sort,sort by specific column,sort -k2 filename.txt
+uniq,remove duplicate lines,uniq filename.txt
+uniq,count duplicate lines,uniq -c filename.txt
+uniq,show only duplicate lines,uniq -d filename.txt
+uniq,show only unique lines,uniq -u filename.txt
+uniq,ignore case when checking duplicates,uniq -i filename.txt
+wc,count lines in file,wc -l filename.txt
+wc,count words in file,wc -w filename.txt
+wc,count characters in file,wc -c filename.txt
+wc,display lines/words/bytes,wc filename.txt
+wc,count lines in multiple files,wc -l file1.txt file2.txt
+grep,search file for pattern,"grep ""pattern"" filename.txt"
+grep,search case-insensitive,"grep -i ""pattern"" filename.txt"
+grep,show lines not matching pattern,"grep -v ""pattern"" filename.txt"
+grep,show line numbers with matches,"grep -n ""pattern"" filename.txt"
+grep,search multiple files,"grep ""pattern"" file1.txt file2.txt"
+head,show first 10 lines of file,head filename.txt
+head,show specific number of lines,head -n 5 filename.txt
+head,show first 20 bytes,head -c 20 filename.txt
+head,show first lines of multiple files,head file1.txt file2.txt
+head,show first lines excluding last lines,head -n -5 filename.txt
+tail,show last 10 lines of file,tail filename.txt
+tail,show specific number of lines,tail -n 5 filename.txt
+tail,follow file changes in real-time,tail -f logfile.txt
+tail,show last 20 bytes,tail -c 20 filename.txt
+tail,show lines excluding first lines,tail -n +5 filename.txt
+tee,save pipeline output to file,command | tee output.txt
+tee,append to file instead of overwriting,command | tee -a output.txt
+tee,output to multiple files,command | tee file1.txt file2.txt
+tee,display output and save,command | tee /dev/tty > output.txt
+tee,use with sudo,"echo ""text"" | sudo tee /root/file.txt"
